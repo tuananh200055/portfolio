@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 , user-scalable=no"
+    />
+    <title>TuanAnh | Portfolio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <canvas class="webgl"></canvas>
+      <div class="loading">
+        <div class="progress">
+          <div class="progress-line"></div>
+          <p class="loading-text">LOADING....</p>
+        </div>
+      </div>
+      <div class="transition-container">
+        <svg class="wave-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,0L30,0C60,0,120,0,180,42.7C240,85,300,171,360,192C420,213,480,171,540,138.7C600,107,660,85,720,101.3C780,117,840,171,900,192C960,213,1020,203,1080,170.7C1140,139,1200,85,1260,69.3C1320,53,1380,75,1410,85.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          ></path>
+        </svg>
+        <div class="offset"></div>
+        <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,0L30,0C60,0,120,0,180,42.7C240,85,300,171,360,192C420,213,480,171,540,138.7C600,107,660,85,720,101.3C780,117,840,171,900,192C960,213,1020,203,1080,170.7C1140,139,1200,85,1260,69.3C1320,53,1380,75,1410,85.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="mail-toast">
+        <p>Send mail successfully</p>
+      </div>
+      <header>
+        <svg
+          class="main-logo"
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="100"
+          xml:space="preserve"
+        >
+          <path
+            class="logo__pathOutside"
+            fill="#eee"
+            d="M82.736 57.207c.029-.566.086-1.126.086-1.699 0-12.74-7.264-23.753-17.858-29.195-.194-8.12-6.8-14.646-14.964-14.646s-14.772 6.526-14.968 14.646c-10.596 5.442-17.857 16.456-17.857 29.195 0 .573.059 1.133.084 1.702C12.927 59.841 10 64.559 10 70c0 8.284 6.716 14.997 15 15 2.63 0 5.065-.734 7.214-1.924 5.13 3.313 11.224 5.257 17.786 5.257a32.631 32.631 0 0 0 17.783-5.257C69.932 84.266 72.366 85 74.997 85 83.284 85 90 78.284 90 70c0-5.441-2.927-10.163-7.264-12.793zM50 18.337a8.33 8.33 0 0 1 8.333 8.333A8.33 8.33 0 0 1 50 35.003a8.331 8.331 0 0 1-8.333-8.333A8.33 8.33 0 0 1 50 18.337zM25 78.333A8.333 8.333 0 0 1 16.667 70 8.339 8.339 0 0 1 25 61.663 8.335 8.335 0 0 1 33.333 70 8.331 8.331 0 0 1 25 78.333zm37.596.103A26.05 26.05 0 0 1 50 81.667c-4.57 0-8.86-1.176-12.598-3.235A14.922 14.922 0 0 0 40 70c.003-8.291-6.716-15-15-15.003-.391 0-.755.084-1.14.112.141-9.341 5.176-17.471 12.65-21.984 2.419 5.039 7.526 8.544 13.49 8.544 5.967 0 11.07-3.505 13.488-8.544 7.476 4.516 12.508 12.645 12.646 21.984-.384-.028-.748-.112-1.139-.112C66.712 55 60 61.712 59.997 70c0 3.128.96 6.027 2.599 8.436zm12.401-.103A8.328 8.328 0 0 1 66.667 70a8.329 8.329 0 0 1 8.33-8.333A8.333 8.333 0 0 1 83.333 70a8.331 8.331 0 0 1-8.336 8.333z"
+          />
+          <path
+            class="logo__pathInside"
+            fill="#eee"
+            d="M50 45.508c-5.524 0-10 4.477-10 10 0 5.524 4.476 10 10 10 5.523 0 10-4.476 10-10s-4.477-10-10-10zm0 13.333a3.33 3.33 0 0 1-3.333-3.333c0-1.843 1.49-3.333 3.333-3.333s3.333 1.49 3.333 3.333A3.33 3.33 0 0 1 50 58.841z"
+          />
+        </svg>
+        <div class="menu">
+          <div class="menu-0"></div>
+          <div class="menu-1"></div>
+          <div class="menu-2"></div>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Works</li>
+          <li>Contact</li>
+        </ul>
+        <div class="social">
+          <a
+            href="https://www.facebook.com/profile.php?id=100007602399841"
+            target="blank"
+          >
+            <img
+              src="/static/social-icon/5282541_fb_social media_facebook_facebook logo_social network_icon.png"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://github.com/tuananh200055?tab=overview&from=2022-12-01&to=2022-12-31"
+            target="blank"
+          >
+            <img src="/static/social-icon/4747499_github_icon.png" alt="" />
+          </a>
+          <a href="mailto:tuananh200055@gmail.com" >
+            <img
+              src="/static/social-icon/1147408_address book_circle_contacts_email_gmail_icon.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </nav>
+      <div class="scroll-wrap">
+        <section class="welcome">
+          <div class="greeting">
+            <h1>Hi, my</h1>
+            <p class="name">name is Tuan Anh</p>
+            <p class="slogan">I love creating beautiful websites</p>
+            <p class="giTouch">Get in touch</p>
+          </div>
+        </section>
+        <section class="about">
+          <div class="info reveal">
+            <div>
+              <p>Name</p>
+              <p>Nguyen Tuan Anh</p>
+            </div>
+            <div>
+              <p>Age</p>
+              <p>23</p>
+            </div>
+            <div>
+              <p>From</p>
+              <p>Viet Nam</p>
+            </div>
+          </div>
+          <div class="skill reveal">
+            <h2>Skills</h2>
+            <div class="skill_name">
+              <span class="hcss">HTML + CSS</span>
+              <span class="jvs">Javascript</span>
+              <span class="react">ReactJS</span>
+              <span class="jv">Java</span>
+              <span class="three">Three js</span>
+              <span class="sql">SQL Server</span>
+            </div>
+          </div>
+          <div class="education reveal">
+            <h2>Education</h2>
+            <p>Graduating from FPT University in 2023</p>
+          </div>
+          <div class="introduce reveal">
+            <h2>About me</h2>
+            <p>
+              When I was a kid and watching action movies and seeing hackers I
+              thought they were cool and mysterious so I've always wanted to be
+              a hacker. But hackers would go to jail so I chose to be a software
+              engineer. After 4 years of college and seeing amazing websites
+              made me want to become a professional web developer.
+            </p>
+          </div>
+          <div class="email reveal">
+            <h2>Email</h2>
+            <p>tuananh200055@gmail.com</p>
+          </div>
+          <div class="address reveal">
+            <h2>Address</h2>
+            <p>Ho Chi Minh City, District 9</p>
+          </div>
+        </section>
+        <section class="work">
+          <h2 class="section-title">Some of my project</h2>
+          <div class="project">
+            <div class="project-item active">
+              <img src="/static/img/wooder.jpg" alt="" />
+              <div class="project-item-description">
+                <h3>Wooder</h3>
+                <div class="tech">
+                  <span class="jvs">Javascript</span>
+                  <span class="ht">HTML</span>
+                  <span class="cs">CSS</span>
+                </div>
+                <p>A landing page of furnitures</p>
+              </div>
+              <div class="source">
+                <a
+                  href="https://github.com/tuananh200055/wooder"
+                  class="git"
+                  target="_blank"
+                >
+                  <img
+                    src="/static/social-icon/4747499_github_icon.png"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://tuananh200055.github.io/wooder/"
+                  class="live"
+                  target="_blank"
+                >
+                  Live view
+                </a>
+              </div>
+            </div>
+            <div class="project-item">
+              <img src="/static/img/port.jpg" alt="" />
+              <div class="project-item-description">
+                <h3>Portfolio</h3>
+                <div class="tech">
+                  <span class="three">THREE JS</span>
+                  <span class="jvs">Javascript</span>
+                  <span class="ht">HTML</span>
+                  <span class="cs">CSS</span>
+                </div>
+                <p>
+                  The site introduces myself and practices some of the
+                  techniques I just learned.
+                </p>
+              </div>
+              <div class="source">
+                <a href="#" class="git">
+                  <img
+                    src="/static/social-icon/4747499_github_icon.png"
+                    alt=""
+                  />
+                </a>
+                <a href="#" class="live"> Live view </a>
+              </div>
+            </div>
+            <div class="project-item">
+              <img src="/static/img/marvel.jpg" alt="" />
+              <div class="project-item-description">
+                <h3>Marvel</h3>
+                <div class="tech">
+                  <span class="react">React JS</span>
+                  <span class="api">API</span>
+                  <span class="jvs">Javascript</span>
+                  <span class="ht">HTML</span>
+                  <span class="cs">CSS</span>
+                </div>
+                <p>
+                  website using marvel api . i wanted to clone marvel page but
+                  the data provided by marvel wasn't enough so i stopped at
+                  character.
+                </p>
+              </div>
+              <div class="source">
+                <a
+                  href="https://github.com/tuananh200055/marvel"
+                  class="git"
+                  target="_blank"
+                >
+                  <img
+                    src="/static/social-icon/4747499_github_icon.png"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://tamarvelcharacter.netlify.app/"
+                  class="live"
+                  target="_blank"
+                >
+                  Live view
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="navigation">
+            <div class="navigation-arrow">
+              <div class="prev disable">
+                <img src="/static/img/arrow.png" alt="" />
+              </div>
+              <div class="next">
+                <img src="/static/img/arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact">
+          <h2 class="section-title">Contact me</h2>
+          <div class="container">
+            <div class="contact-wrapper">
+              <form action="" class="contactForm" method="post">
+                <div class="sending">
+                  <p class="loading-text">Sending....</p>
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <label for="nameIp">Name:</label>
+                    <span class="error"></span>
+                  </div>
+                  <input
+                    type="text"
+                    class="nameIp"
+                    name="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <label for="email">Email:</label>
+                    <span class="error"></span>
+                  </div>
+                  <input type="email" class="emailIp" name="email" />
+                </div>
+                <div class="form-group full">
+                  <div class="row">
+                    <label for="message">Message:</label>
+                    <span class="error"></span>
+                  </div>
+                  <textarea class="message" name="message" id=""></textarea>
+                </div>
+                <div class="contact-button">
+                  <div class="social contact-social">
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100007602399841"
+                      target="blank"
+                    >
+                      <img
+                        src="/static/social-icon/5282541_fb_social media_facebook_facebook logo_social network_icon.png"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="https://github.com/tuananh200055?tab=overview&from=2022-12-01&to=2022-12-31"
+                      target="blank"
+                    >
+                      <img
+                        src="/static/social-icon/4747499_github_icon.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="mailto:tuananh200055@gmail.com">
+                      <img
+                        src="/static/social-icon/1147408_address book_circle_contacts_email_gmail_icon.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <button class="btn">Submit</button>
+                </div>
+              </form>
+              <div class="me">
+                <img src="/static/img/me.png" alt="" />
+                <div class="blur"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <p>Inspiration from David Heckhoff</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
