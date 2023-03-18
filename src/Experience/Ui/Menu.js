@@ -43,7 +43,7 @@ export default class Menu {
   clickMenuItem() {
     this.menuItem.forEach((element, index) => {
       element.addEventListener("click", () => {
-        if (this.currentElement != index) {
+        if (this.section[index].offsetTop != this.experience.scrollWrap.scrollY) {
           setTimeout(
             () =>
               this.experience.scrollWrap.scrollToElement(this.section[index]),
@@ -51,7 +51,6 @@ export default class Menu {
           );
           this.showOverlay();
           this.closeMenu();
-          this.currentElement = index;
         }
       });
     });
