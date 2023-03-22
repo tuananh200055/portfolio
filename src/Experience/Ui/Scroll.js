@@ -26,6 +26,10 @@ export default class Scroll{
 				this.scrollY += (this.scrollDistance - this.prevDistance) * -1
 				this.prevDistance = this.scrollDistance
 				this.scrollTo = this.preventFromScrollingBottom()
+				if(this.scrollY < 0){
+					this.scrollY = 0
+					this.scrollTo = this.scrollY;
+				}
 				}
 				this.scroll()
 				this.experience.about.reveal()
@@ -40,6 +44,10 @@ export default class Scroll{
 			if(this.scrollY < this.scrollElement.offsetHeight - this.experience.sizes.height || this.wheelValue <0 )	
 			this.scrollY += this.wheelValue
 			this.scrollTo = this.preventFromScrollingBottom()
+			if(this.scrollY < 0){
+				this.scrollY = 0
+				this.scrollTo = this.scrollY;
+			}
 			}
 			this.scroll()
 			this.experience.about.reveal()
