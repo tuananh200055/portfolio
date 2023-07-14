@@ -803,12 +803,12 @@ button:hover{
 
 .contact-wrapper{
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content:space-between;
 }
 
 .me{
-    width: 500px;
+    width: 300px;
     max-width: 100%;
     position: relative;
 }
